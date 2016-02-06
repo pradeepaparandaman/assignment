@@ -1,0 +1,21 @@
+#include<stdio.h>
+main()
+{
+	int a[]={1,10,2,20,10,1},i,j,t,flag=0;
+	for(i=0;i<6;i++)
+	{
+		j=5;
+		if(a[i]==a[j])
+		{
+			t=a[i];
+			a[i]=a[j];
+			a[j]=t;
+	flag++;
+		}
+		j--;
+	}
+	for(i=0;i<=flag;i++)
+	{
+		printf("%d\t",a[i]);
+	}
+}
